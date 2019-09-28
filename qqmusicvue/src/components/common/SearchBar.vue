@@ -5,7 +5,6 @@
     <img :src="require('../../assets/music.png')" class="rightimg" />
   </div>
 </template>
-
 <script>
 export default {};
 </script>
