@@ -1,6 +1,6 @@
 <template>
     <div>
-        <searchbar></searchbar>
+        <searchbar msg="音乐馆" :imgurl="require('../assets/music.png')"></searchbar>
         <swipe></swipe>
     </div>
 </template>
@@ -8,6 +8,12 @@
 import SearchBar from "../components/common/SearchBar"
 import Swipe from "../components/common/Swipe"
 export default {
+    data(){
+        return{
+            msg:"",
+            imgurl:""
+        }
+    },
     components:{
         "searchbar":SearchBar,
         "swipe":Swipe

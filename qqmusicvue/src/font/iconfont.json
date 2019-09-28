@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "454694",
+      "name": "首页",
+      "font_class": "01",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "792343",
+      "name": "moon-月亮",
+      "font_class": "moonyueliang",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "2512622",
+      "name": "BAI_星星",
+      "font_class": "BAI_xingxing",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "8879771",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

@@ -1,12 +1,17 @@
 <template>
   <div class="searchbar">
-    <h3>音乐馆</h3>
+    <h3>{{msg}}</h3>
     <input class="search" type="text" placeholder="搜索" />
-    <img :src="require('../../assets/music.png')" class="rightimg" />
+    <img :src="imgurl" class="rightimg" />
   </div>
 </template>
 <script>
-export default {};
+export default {
+  props:{
+    msg:{default:""},
+    imgurl:{default:""}
+    }  
+  }
 </script>
 
 <style>
