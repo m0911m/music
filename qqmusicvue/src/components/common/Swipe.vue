@@ -1,6 +1,6 @@
 <template>
     <div>
-        <van-swipe :autoplay="3000" indicator-color="white">
+        <van-swipe :width="400" :autoplay="3000" indicator-color="white">
             <van-swipe-item v-for="(pic,i) of banners" :key="i">
                 <img :src="require(`../../assets/${pic}`)" class="image">
             </van-swipe-item>
@@ -12,7 +12,7 @@
 export default {
     data(){
         return{
-            banners:["1749276.jpg","1749533.jpg","1749743.jpg","1749758.jpg"]
+            banners:["1746014.jpg","1747083.jpg","1747238.jpg","1747869.jpg","1748028.jpg"]
         }
     }
 }
