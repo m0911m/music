@@ -2,8 +2,10 @@
     <div>
         <ul class="list">
             <li v-for="(icon,i) of catalogues" :key="i">
-                <span :class="`iconfont ${icon.iconName}`"></span>
-                <span class="icontext">{{icon.text}}</span> 
+                <router-link to="">
+                    <span :class="`iconfont ${icon.iconName}`"></span>
+                    <span class="icontext">{{icon.text}}</span> 
+                </router-link>
             </li>
         </ul>
     </div>
@@ -45,7 +47,7 @@ export default {
         color: #31c27c;
         margin-top:0.8rem;
     }
-    .list>li{
+    .list>li>a{
         display:flex;
         flex-direction:column;
     }
