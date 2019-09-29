@@ -15,21 +15,21 @@ export default {
     data(){
         return {
             catalogues:[{
-                iconName:"icon-home",
+                iconName:"icon-flyme_icon-",
                 text:"歌手"
                 },
                 {
-                iconName:"icon-home",
+                iconName:"icon-paihang",
                 text:"排行"
                 },
                 {
-                iconName:"icon-home",
+                iconName:"icon-leimupinleifenleileibie",
                 text:"分类歌单"
                 },{
-                iconName:"icon-home",
+                iconName:"icon-diantai",
                 text:"电台"
                 },{
-                iconName:"icon-home",
+                iconName:"icon-ting",
                 text:"一起听"
                 },
             ]
