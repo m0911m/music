@@ -1,17 +1,10 @@
 <template>
     <div class="cards">
-        <div class="card">
-            <img src="" alt="">
+        <div class="card" v-for="(pic,i) of pics" :key="i">
+            <img :src="require('../../assets/CsYa.jpg')" class="imgstyle">
             <div class="cardtext">
-                <span>新歌新碟</span>
-                <span>麻辣腿退休?NO!</span>
-            </div>
-        </div>
-        <div class="card">
-            <img src="" alt="">
-            <div class="cardtext">
-                <span>新歌新碟</span>
-                <span>麻辣腿退休?NO!</span>
+                <span>{{title}}</span>
+                <span>{{subtitle}}</span>
             </div>
         </div>
     </div>
@@ -19,7 +12,13 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            pics:["CsYa.jpg","AfYu.jpg"],
+            title:["新歌新碟","数字专辑"],
+            subtitle:["麻辣鸡退休?NO!","限定记忆序章"]
+        }
+    }
 }
 </script>
 
@@ -40,5 +39,9 @@ export default {
     display:inline-flex;
     flex-direction:column;
     align-items:flex-start;
+}
+.imgstyle{
+    width:3.5rem;
+    height:3.5rem;
 }
 </style>
