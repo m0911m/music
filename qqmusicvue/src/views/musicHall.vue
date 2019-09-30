@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-import SearchBar from "../components/common/SearchBar"
+import SearchBar from "../components/common/SearchBar.vue"
 import Swipe from "../components/common/Swipe.vue"
 import Catalogues from "../components/common/Catalogues.vue"
 import Cards from "../components/common/Cards.vue"
