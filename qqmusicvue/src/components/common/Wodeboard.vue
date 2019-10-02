@@ -35,22 +35,22 @@ export default {
 }
 </script>
 <style>
-    .list{
-        display:flex;
-        justify-content:space-around;
-    }
-    .iconfont{
-        font-size: 1.7rem !important;
-        color: #31c27c;
-        margin-top:0.8rem;
-    }
-    .list>li>a{
-        display:flex;
-        flex-direction:column;
-    }
-    .icontext{
-        font-size: 0.9rem;
-        margin:0.5rem 0;
-    }
+.list{
+    display:flex;
+    justify-content:space-around;
+}
+.iconfont{
+    font-size: 1.7rem !important;
+    color: #31c27c;
+    margin-top:0.8rem;
+}
+.list>li>a{
+    display:flex;
+    flex-direction:column;
+}
+.icontext{
+    font-size: 0.9rem;
+    margin:0.5rem 0;
+}
 </style>
 
