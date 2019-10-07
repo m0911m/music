@@ -1,14 +1,14 @@
 <template>
   <div>
     <searchbar msg="我的" :imgurl="require('../assets/woright.png')"></searchbar>
-    <login></login>
+    <xinxi></xinxi>
     <wpdeboard></wpdeboard>
   </div>
 </template>
 <script>
 import SearchBar from './common/SearchBar'
 import Wodeboard from './common/Wodeboard'
-import Login from './common/Login'
+import Xinxi from './common/Xinxi'
   export default{
       data(){
     return{
@@ -17,7 +17,7 @@ import Login from './common/Login'
     }
   }, 
     components:{
-      "login":Login,
+      "xinxi":Xinxi,
       "searchbar":SearchBar,
       "wpdeboard":Wodeboard
     }
