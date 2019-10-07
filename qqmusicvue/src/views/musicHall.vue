@@ -4,6 +4,7 @@
         <swipe></swipe>
         <catalogues></catalogues>
         <cards></cards>
+        <songlist></songlist>
     </div>
 </template>
 <script>
@@ -11,6 +12,7 @@ import SearchBar from "../components/common/SearchBar.vue"
 import Swipe from "../components/common/Swipe.vue"
 import Catalogues from "../components/common/Catalogues.vue"
 import Cards from "../components/common/Cards.vue"
+import Songlist from "../components/common/Songlist.vue"
 export default {
     data(){
         return{
@@ -22,7 +24,8 @@ export default {
         "searchbar":SearchBar,
         "swipe":Swipe,
         "catalogues":Catalogues,
-        "cards":Cards
+        "cards":Cards,
+        "songlist":Songlist
     }
 }
 </script>

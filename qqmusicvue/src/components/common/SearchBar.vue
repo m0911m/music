@@ -14,7 +14,7 @@ export default {
   }
 </script>
 
-<style>
+<style scoped>
 .searchbar {
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,8 @@ export default {
 }
 h3 {
   margin: 0;
-  margin-left: 0.7rem;
+  margin-left: 1rem;
+  font-size:1.3rem;
 }
 .search {
   border: none;
