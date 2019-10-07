@@ -35,7 +35,7 @@ export default {
       ).then(res=>{
         console.log(res.data.code);
         if(res.data.code<0){
-          this.$$messagebox("消息","用户名或密码有误")
+          this.$messagebox("消息","用户名或密码有误")
         }else{
           //跳转至wode页面
           this.$router.push("/wode");
