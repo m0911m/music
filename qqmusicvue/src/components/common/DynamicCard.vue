@@ -5,20 +5,25 @@
     <div class="top">
       <img :src="upic" alt="">
       <span>{{uname}}</span>
-      <input type="text" :placeholder='focused?notyet:already' v-model="active">
+      <!-- 1.2右上角的+关注 -->
+      <input type="text" placeholder="+关注" v-model="active">
     </div>
-    <!-- 1.2右上角的+关注 -->
     <!-- 2.中间的大图 -->
+    <div>
+      <img :src="bigimg" alt="">
+    </div>
     <!-- 3、下面的备注 -->
+    <div>
+      <span>###行走的CD机</span>
+
+    </div>
   </div>
 </template>
 <script>
 export default {
   upic:{default:""},
   uname:{default:""},
-  focused:false,
-  notyet:{default:"+关注"},
-  already:{default:"已关注"}
+  bigimg:{default:""}
 }
 </script>
 <style scoped>
@@ -29,7 +34,18 @@ export default {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  
+  position: relative;
+}
+.top>input{
+  display:flex;
+  width:3.25rem;
+  justify-content:space-between;
+  border-radius:1rem;
+  border:1px solid #ddd;
+  opacity: 0.75;
+  padding:2px;
+  font-size:0.8rem;
+  text-align:center;
 }
 </style>
 

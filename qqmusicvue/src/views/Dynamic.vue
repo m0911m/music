@@ -2,7 +2,9 @@
   <div>
     <dynamicbar :dynamicIcon="require('../assets/focus.png')"></dynamicbar>
     <swipe></swipe>
-    <dynamiccard uname="比三呆" :upic="require('../assets/uboy.png')"></dynamiccard>
+    <dynamiccard uname="比三呆" :upic="require('../assets/uboy.png')"
+      :bigimg="require('../assets/1747238.jpg')"
+    ></dynamiccard>
   </div>
 </template>
 <script>
