@@ -3,6 +3,7 @@
     <mt-field label="用户名" placeholder="请输入用户名" :attr="{autofocus:true}" v-model="uname"></mt-field>
     <mt-field type="password" label="密码" placeholder="请输入密码" v-model="upwd"></mt-field>
     <mt-button size="large" @click="login">登录</mt-button>
+    <mt-button size="large" @click="registe"></mt-button>
   </div>
 </template>
 <script>
@@ -14,6 +15,10 @@ export default {
     }
   },  
   methods:{
+    registe(){
+      //跳转至registe页面
+      this.$router.push("/registe");
+    },
     login(){
       var u=this.uname;
       var p=this.upwd;
