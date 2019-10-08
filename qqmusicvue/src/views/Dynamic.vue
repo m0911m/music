@@ -2,8 +2,11 @@
   <div>
     <dynamicbar :dynamicIcon="require('../assets/focus.png')"></dynamicbar>
     <swipe></swipe>
-    <dynamiccard uname="比三呆" :upic="require('../assets/uboy.png')"
-      :bigimg="require('../assets/1747238.jpg')"
+    <dynamiccard 
+      uname="月月酱"
+      :upic="require('../assets/ugirl.png')"
+      utext="╔into You╝ 想给你所有的美好"
+      :mpic="require('../assets/1748028.jpg')"
     ></dynamiccard>
   </div>
 </template>
