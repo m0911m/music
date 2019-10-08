@@ -43,7 +43,7 @@ export default {
           this.$messagebox("消息","用户名或密码有误")
         }else{
           //跳转至wode页面
-          this.$router.push("/wode");
+          this.$router.push("/Wode");
           // location.href="http://127.0.0.1:8080/#/wode"
         }
       });
