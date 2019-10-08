@@ -2,7 +2,9 @@
     <div>
         <van-swipe :width="400" :autoplay="3000" indicator-color="white">
             <van-swipe-item v-for="(pic,i) of banners" :key="i">
+                <router-link to="">
                 <img :src="require(`../../assets/${pic}`)" class="image">
+                </router-link>
             </van-swipe-item>
         </van-swipe>
     </div>

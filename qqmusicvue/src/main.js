@@ -22,6 +22,16 @@ Vue.use(MintUI)
 // 4.引入字体图标文件
 import "./font/iconfont.css"
 
+
+// 5.引入axios模块
+import axios from "axios"
+// 6.配置服务器的基础路径
+axios.defaults.baseURL="http://127.0.0.1:4000"
+// 7.配置保存session信息
+axios.defaults.withCreadentials=true
+// 8.注册axios->vue
+Vue.prototype.axios=axios
+
 Vue.config.productionTip = false;
 
 new Vue({

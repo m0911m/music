@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .cards {
   display: flex;
   justify-content: space-around;
