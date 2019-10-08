@@ -4,11 +4,13 @@ import musicHall from './views/musicHall.vue'
 import Dynamic from './views/Dynamic.vue'
 import Wode from './components/wode.vue'
 import Login from './components/common/Login.vue'
+import Registe from './components/common/Registe.vue'
 Vue.use(Router)
 
 
 export default new Router({
   routes: [
+    {path:'/registe',component:Registe},
     {path:'/login',component:Login},
     {path:'/wode',component:Wode},
     {path:'/musicHall',component:musicHall},
