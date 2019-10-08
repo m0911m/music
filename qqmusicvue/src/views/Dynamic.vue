@@ -6,7 +6,7 @@
       uname="月月酱"
       :upic="require('../assets/ugirl.png')"
       utext="╔into You╝ 想给你所有的美好"
-      :mpic="require('../assets/1748028.jpg')"
+      :mpic="require('../assets/north.jpg')"
     ></dynamiccard>
   </div>
 </template>

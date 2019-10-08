@@ -18,6 +18,11 @@
     <!-- 3、下面的备注 -->
     <div class="bottom"> 
       <span>#ACG</span>
+      <div class="icon">
+        <img :src="require('../../assets/msg.png')" alt="">6
+        <img :src="require('../../assets/zan.png')" alt="">94
+        <span>···</span>
+      </div>
     </div>
   </div>
 </template>
@@ -76,7 +81,24 @@ input{
 .middle img{
   display: flex;
   width:22rem;
+  height:12rem;
   border-radius:0.3rem;
+}
+.bottom{
+  display:flex;
+  margin-top:0.5rem;
+}
+.bottom span{
+  margin-left:0.5rem;
+  margin-right:6rem;
+}
+
+.bottom>.icon>span{
+  margin-left:1rem;
+}
+.bottom img{
+  width:1.55rem;
+  margin-left:0.75rem;
 }
 </style>
 
