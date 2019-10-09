@@ -4,7 +4,8 @@
         <swipe></swipe>
         <catalogues></catalogues>
         <cards></cards>
-        <songlist></songlist>
+        <songlist msg="官方歌单" :songlist="songlist"></songlist>
+        <songlist msg="达人歌单" :songlist="songlist"></songlist>
     </div>
 </template>
 <script>
@@ -17,7 +18,39 @@ export default {
     data(){
         return{
             msg:"",
-            imgurl:""
+            imgurl:"",
+            songlist:[
+                {
+                  pic: "f8.jpg",  
+                  iconName:"",
+                  playCount:"1888万",
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  iconName:"",
+                  playCount:"148万",
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  iconName:"",
+                  playCount:"356万",
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  iconName:"",
+                  playCount:"500万",
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  iconName:"",
+                  playCount:"186万",
+                  title:"下一首情歌"
+                },
+            ]
         }
     },
     components:{

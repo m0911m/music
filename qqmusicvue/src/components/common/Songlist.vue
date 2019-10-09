@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="title">
-            <h3>官方歌单</h3>
+            <h3>{{msg}}</h3>
             <span class="more">
                 <router-link to="">
                 更多 >
@@ -11,45 +11,18 @@
         <ul>
             <li v-for="(item,i) of songlist" :key="i">
                 <img :src="require('../../assets/'+songlist[i].pic)" alt="">
-                <span class="iconfont"></span>
-                <span class="iconfont play-count">{{songlist[i].playCount}}</span>
-                <span></span>
+                <span class="play-count">{{songlist[i].playCount}}</span>
+                <span class="play"></span>
+                <span class="text">{{songlist[i].title}}</span>
             </li>
         </ul>
     </div>
 </template>
 <script>
 export default {
-    data(){
-        return {
-            songlist:[
-                {
-                  pic: "uboy.png",  
-                  iconName:"",
-                  playCount:"1888万",
-                },
-                {
-                  pic: "ugirl.png",  
-                  iconName:"",
-                  playCount:"148万",
-                },
-                {
-                  pic: "uboy.png",  
-                  iconName:"",
-                  playCount:"356万",
-                },
-                {
-                  pic: "uboy.png",  
-                  iconName:"",
-                  playCount:"500万",
-                },
-                {
-                  pic: "uboy.png",  
-                  iconName:"",
-                  playCount:"186万",
-                },
-            ]
-        }
+    props:{
+        msg:{default:""},
+        songlist: {default: []}
     }
 }
 </script>
@@ -73,11 +46,11 @@ ul{
 }
 li{
     position: relative;
-    width:7rem;height:7rem;
+    width:6.3rem;
     border-radius:0.3rem;
-    margin:0 0.2rem;
-    flex-shrink:0;
-    background-color:aquamarine;
+    margin:0 0.24rem;
+    flex-shrink:0;    /*让项目们不因为空间小而收缩*/
+    text-align:left;
 }
 ul>li:first-child{
     margin-left:calc(25vw - 5.1rem);
@@ -88,18 +61,31 @@ ul>li:last-child{
 
 }
 li img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
+    width:100%;
+    border-radius:.3rem;
 }
 li .play-count{
-    position: absolute;
-    left: .5rem;
-    bottom: .5rem;
-    font-size: .75rem !important;
-    color: #fff;
+    font-size:.7rem !important;
+    position:absolute;
+    top:4.8rem;
+    left:.3rem;
+    color:#fff;
+    background-image:url(../../assets/erji.png);
+    background-position:left center;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    padding-left:.9rem;
+}
+li .play{
+    position:absolute;
+    width:1.5rem;height:1.5rem;
+    background:url(../../assets/play.png) no-repeat center/100%;
+    top:4.4rem;
+    right:.3rem;
+}   
+li .text{
+    font-size:0.9rem;
+    display:inline-block;
+    margin:.3rem 0;
 }
 </style>
