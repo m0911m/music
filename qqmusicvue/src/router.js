@@ -12,7 +12,7 @@ export default new Router({
   routes: [
     {path:'/register',component:Register},
     {path:'/login',component:Login},
-    {path:'/wode',component:Me},
+    {path:'/me',component:Me},
     {path:'/musicHall',component:musicHall},
     {path:'/dynamic',component:Dynamic}
   ]
