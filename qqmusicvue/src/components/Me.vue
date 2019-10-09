@@ -9,6 +9,7 @@
 import SearchBar from './common/SearchBar'
 import Wodeboard from './common/Wodeboard'
 import Xinxi from './common/Xinxi'
+
   export default{
       data(){
     return{
