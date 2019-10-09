@@ -2,23 +2,21 @@
   <div>
     <dynamicbar :dynamicIcon="require('../assets/focus.png')"></dynamicbar>
     <swipe></swipe>
-    <dynamiccard 
-      uname="月月酱"
-      :upic="require('../assets/ugirl.png')"
-      utext="╔into You╝ 想给你所有的美好"
-      :mpic="require('../assets/north.jpg')"
-    ></dynamiccard>
+    <dynamiccard ></dynamiccard>
+    <dynamicscroll></dynamicscroll>
   </div>
 </template>
 <script>
 import DynamicBar from '../components/common/DynamicBar.vue'
 import Swipe from '../components/common/Swipe.vue'
 import DynamicCard from '../components/common/DynamicCard.vue'
+import DynamicScroll from '../components/common/DynamicScroll.vue'
 export default {
   components:{
     "dynamicbar":DynamicBar,
     "swipe":Swipe,
-    "dynamiccard":DynamicCard
+    "dynamiccard":DynamicCard,
+    "dynamicscroll":DynamicScroll
   }
 }
 </script>

@@ -18,7 +18,6 @@ export default {
   width:100%;
   justify-content:space-between;
   align-items: center;
-  margin-left:0.8rem;
 }
 input{
   width: 9rem;
