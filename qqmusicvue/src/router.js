@@ -20,7 +20,7 @@ export default new Router({
     {path:'/register',component:Register},
 >>>>>>> 7a87cd3e500e7bd1ea33fd059d93ee32a6cfed06
     {path:'/login',component:Login},
-    {path:'/wode',component:Me},
+    {path:'/me',component:Me},
     {path:'/musicHall',component:musicHall},
     {path:'/dynamic',component:Dynamic}
   ]
