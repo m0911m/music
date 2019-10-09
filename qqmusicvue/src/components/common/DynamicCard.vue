@@ -19,8 +19,8 @@
     <div class="bottom"> 
       <span>#ACG</span>
       <div class="icon">
-        <img :src="require('../../assets/msg.png')" alt="">6
-        <img :src="require('../../assets/zan.png')" alt="">94
+        <img :src="require('../../assets/msg.png')" alt="">
+        <img :src="require('../../assets/zan.png')" alt="">
         <span>···</span>
       </div>
     </div>

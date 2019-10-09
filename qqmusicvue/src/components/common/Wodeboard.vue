@@ -8,12 +8,19 @@
                 </router-link>
             </li>
         </ul>
+        <div class="card">
+            <h3>智能分类</h3>
+            <div class="zhineng">
+                <router-link class="shite" to="" v-for="(item,i) of siet" :key="i">{{siet[i]}}</router-link>
+            </div>
+        </div>
     </div>
 </template>
 <script>
 export default {
     data(){
         return {
+            siet:["情歌","许嵩","世纪之初","治愈"],
           catalogues:[{
               iconName:"icon-recommend",
               text:"喜欢"
@@ -51,6 +58,20 @@ export default {
 .icontext{
     font-size: 0.9rem;
     margin:0.5rem 0;
+}
+.card{
+    display:flex;
+    text-align:left;
+    flex-direction: column;
+}
+.card>h3{
+    margin-left:1rem;
+}
+.zhineng{
+    display:flex;
+}
+.shite{
+    margin-left:2rem;
 }
 </style>
 

@@ -17,7 +17,7 @@ export default {
   methods:{
     registe(){
       //跳转至registe页面
-      this.$router.push("/registe");
+      this.$router.push("/register");
     },
     login(){
       var u=this.uname;

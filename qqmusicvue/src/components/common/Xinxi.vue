@@ -16,16 +16,32 @@
       <!-- 左侧 活动中心 -->
       <router-link class="left" to="">
         <span class="iconfont icon-huodongzhongxin"></span>
-        <span>活动中心</span>
+        <div class="board">
+          <span class="text">活动中心</span>
+          <span class="txt">立即签到领积分</span>
+        </div>
       </router-link>
       <!-- 右侧 会员中心 -->
-
+      <router-link class="left" to="">
+        <span class="iconfont icon-huodongzhongxin"></span>
+        <div class="board">
+          <span class="text">活动中心</span>
+          <span class="txt">立即签到领积分</span>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
 <script>
 export default{
+  data(){
+    return{
 
+    }
+  },
+  methods:{
+
+  }
 }
 </script>
 <style scoped>
@@ -54,19 +70,32 @@ export default{
 .iconfont{
   font-size: 1.7rem !important;
   color: #31c27c;
-  margin-top:0.8rem;
-  margin-left:8rem;
+  margin-top:0.375rem;
+  margin-left:6rem;
 }
 .downstyle{
   display:flex;
+  text-align:left;
   padding-bottom:1rem;
 }
 .left{
   display: flex;
-  flex-direction: column;
-  margin-left: 0px;
+  align-items: center;
 }
 .icon-huodongzhongxin:before{
-  margin-left:-128px;
+  margin-left:-70px;
+}
+.board{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:-39px;
+  margin-top:15px;
+}
+.text{
+  font-size:0.2rem;
+}
+.txt{
+  font-size:0.25rem;
 }
 </style>
