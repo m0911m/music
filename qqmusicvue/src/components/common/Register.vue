@@ -37,23 +37,27 @@ export default {
       // 验证用户名
       if(regu.test(u)==false){
         this.$messagebox("用户名格式不正确");
-        return;
       }
       // 验证密码
       if(regu.test(p)==false){
         this.$messagebox("密码格式不正确");
         return;
       }
+        // 验证邮箱
+        if(rege.test(e)==false){
+          this.$messagebox("邮箱格式不正确");
+          return;
+        }
       // 验证手机号
       if(regh.test(h)==false){
         this.$messagebox("手机号格式不正确");
         return;
       }
-      // 验证邮箱
-      if(rege.test(e)==false){
-        this.$messagebox("邮箱格式不正确");
-        return;
-      }
+      var url="register"
+      var obj={uname:u,upwd:p,email:e,phone:h};
+      this.axios.post(url,{params:obj}).then(res=>{
+        console.log(res.data.msg)
+      })
     }
   }
 }
