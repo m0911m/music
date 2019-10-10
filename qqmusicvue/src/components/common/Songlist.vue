@@ -10,10 +10,12 @@
         </div>
         <ul>
             <li v-for="(item,i) of songlist" :key="i">
-                <img :src="require('../../assets/'+songlist[i].pic)" alt="">
+                <router-link to="">
+                    <img :src="require('../../assets/'+songlist[i].pic)" alt="">
+                    <span class="text">{{songlist[i].title}}</span>
+                </router-link>        
                 <span class="play-count">{{songlist[i].playCount}}</span>
                 <span class="play"></span>
-                <span class="text">{{songlist[i].title}}</span>
             </li>
         </ul>
     </div>
@@ -31,10 +33,12 @@ export default {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-top:.5rem;
 }
 h3{
     margin-left: 1rem;
     font-size:1.1rem;
+    margin-bottom:.6rem;
 }
 .more{
     margin-right: 1rem;
@@ -42,7 +46,7 @@ h3{
 }
 ul{
     display:flex;
-    overflow:scroll;
+    overflow:scroll; /*溢出滚动*/
 }
 li{
     position: relative;

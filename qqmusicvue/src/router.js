@@ -5,6 +5,7 @@ import Dynamic from './views/Dynamic.vue'
 import Me from './components/Me.vue'
 import Login from './components/common/Login.vue'
 import Register from './components/common/Register.vue'
+import MVlist from './components/common/MVlist.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -13,6 +14,7 @@ export default new Router({
     {path:'/login',component:Login},
     {path:'/wode',component:Me},
     {path:'/musicHall',component:musicHall},
-    {path:'/dynamic',component:Dynamic}
+    {path:'/dynamic',component:Dynamic},
+    {path:'/MVlist',component:MVlist}
   ]
 })

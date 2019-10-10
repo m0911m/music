@@ -1,6 +1,6 @@
 <template>
     <div>
-        <van-swipe :width="400" :autoplay="3000" indicator-color="white">
+        <van-swipe :autoplay="3000" indicator-color="white">
             <van-swipe-item v-for="(pic,i) of banners" :key="i">
                 <router-link to="">
                 <img :src="require(`../../assets/${pic}`)" class="image">
@@ -20,8 +20,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+:global(.van-swipe-item) > a{
+    display: block;
+    padding: 0 calc(25vw - 5.1rem);
+}
 .image{
-    height:10rem;
+    width: 100%;
 }
 </style>
