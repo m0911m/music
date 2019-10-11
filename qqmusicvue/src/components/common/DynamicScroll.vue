@@ -3,8 +3,8 @@
     <div class="title">
       <h4>24小时快讯</h4>
     </div> 
-      <ul v-for="(item,i) of list" :key="i">
-        <li>
+      <ul>
+        <li v-for="(item,i) of list" :key="i">
           <img :src="require('../../assets/'+list[i].pic)" alt="">
           <p>{{list[i].text}}</p>
           <p>{{list[i].subtxt}}</p>
