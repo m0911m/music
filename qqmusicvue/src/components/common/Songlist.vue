@@ -69,7 +69,7 @@ li img{
     border-radius:.3rem;
 }
 li .play-count{
-    font-size:.7rem !important;
+    font-size:.75rem !important;
     position:absolute;
     top:4.8rem;
     left:.3rem;

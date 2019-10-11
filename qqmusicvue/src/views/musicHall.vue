@@ -6,7 +6,10 @@
         <cards></cards>
         <songlist msg="官方歌单" :songlist="songlist"></songlist>
         <songlist msg="达人歌单" :songlist="songlist1"></songlist>
-        <mvlist :list="list"></mvlist>
+        <mvlist msg="国风专区" :list="list"></mvlist>
+        <songlist msg="最新专辑" :songlist="songlist2"></songlist>
+        <mvlist msg="精选视频" :list="list1"></mvlist>
+        <mvlist msg="独家内容" :list="list2"></mvlist>
     </div>
 </template>
 <script>
@@ -85,6 +88,28 @@ export default {
                   title:"下一首情歌"
                 }
             ],
+            songlist2:[
+                {
+                  pic: "f8.jpg",  
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  title:"下一首情歌"
+                },
+                {
+                  pic: "f8.jpg",  
+                  title:"下一首情歌"
+                },
+            ],
             list:[
                 {
                   pic: "Lan.jpg",  
@@ -112,8 +137,61 @@ export default {
                 },
                 {
                   pic: "Lan.jpg", 
-                  smallpic:"timg.jpg", 
+                  smallpic:"timg.jpg",
                   text:"国风专区",
+                  title:"赏一首悠悠古韵"
+                }
+            ],
+            list1:[
+                {
+                  pic: "Lan.jpg",  
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg",  
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg",  
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg", 
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg", 
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                }
+            ],
+            list2:[
+                {
+                  pic: "Lan.jpg",  
+                  video:"",
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg",  
+                  video:"",
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg",  
+                  video:"",
+                  playCount:"156万",
+                  title:"赏一首悠悠古韵"
+                },
+                {
+                  pic: "Lan.jpg",  
+                  video:"",
+                  playCount:"156万",
                   title:"赏一首悠悠古韵"
                 }
             ]

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title">
-      <h4>26小时快讯</h4>
+      <h4>24小时快讯</h4>
     </div> 
       <ul>
         <li v-for="(item,i) of list" :key="i">
